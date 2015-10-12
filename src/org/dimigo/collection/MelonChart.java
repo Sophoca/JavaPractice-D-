@@ -14,7 +14,7 @@ import java.util.*;
  * 2. 累己老 : 2015. 9. 24.
  * </pre> 
  * 
- * @author	: 2636 全己后
+ * @author	: 2636 全己后 111
  * @version : 1.0
  */
 
