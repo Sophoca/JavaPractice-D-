@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package org.dimigo.abstractclass;
 
@@ -7,29 +7,29 @@ package org.dimigo.abstractclass;
  * <pre>
  * org.dimigo.abstractclass
  * 	 |_ IPhone
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 3.
+ *
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 9. 3.
  * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class IPhone extends SmartPhone {
 	public IPhone() {
-		
+
 	}
-	
+
 	public IPhone(String model, String company, int price) {
 		super(model, company, price);
 	}
-	
+
 	public void pay() {
-		System.out.println("¾ÖÇÃÆäÀÌ·Î °áÁ¦ÇÕ´Ï´Ù");
+		System.out.println("ì• í”Œí˜ì´ë¡œ ê²°ì œí•©ë‹ˆë‹¤");
 	}
-	
+
 	public void useAirDrop() {
-		System.out.println("AirDrop ±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù");
+		System.out.println("AirDrop ê¸°ëŠ¥ì„ ì‚¬ìš©í•©ë‹ˆë‹¤");
 	}
 }

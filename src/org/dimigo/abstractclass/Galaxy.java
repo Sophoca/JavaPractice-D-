@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package org.dimigo.abstractclass;
 
@@ -7,29 +7,29 @@ package org.dimigo.abstractclass;
  * <pre>
  * org.dimigo.abstractclass
  * 	 |_ Galaxy
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 3.
+ *
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 9. 3.
  * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ 111
  * @version : 1.0
  */
 
 public class Galaxy extends SmartPhone {
 	public Galaxy() {
-		
+
 	}
-	
+
 	public Galaxy(String model, String company, int price) {
 		super(model, company, price);
 	}
-	
+
 	public void pay() {
-		System.out.println("»ï¼ºÆäÀÌ·Î °áÁ¦ÇÕ´Ï´Ù");
+		System.out.println("ì‚¼ì„±í˜ì´ë¡œ ê²°ì œí•©ë‹ˆë‹¤");
 	}
-	
+
 	public void useWirelessCharging() {
-		System.out.println("¹«¼± ÃæÀü±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù");
+		System.out.println("ë¬´ì„  ì¶©ì „ê¸°ëŠ¥ì„ ì‚¬ìš©í•©ë‹ˆë‹¤");
 	}
 }

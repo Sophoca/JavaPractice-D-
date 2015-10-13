@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package org.dimigo.abstractclass;
 
@@ -7,12 +7,12 @@ package org.dimigo.abstractclass;
  * <pre>
  * org.dimigo.abstractclass
  * 	 |_ SmartPhone
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 3.
+ *
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 9. 3.
  * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
@@ -20,27 +20,27 @@ public abstract class SmartPhone {
 	private String model;
 	private String company;
 	private int price;
-	
+
 	public SmartPhone() {
-		
+
 	}
-	
+
 	public SmartPhone(String model, String company, int price) {
 		this.model = model;
 		this.company = company;
 		this.price = price;
 	}
-	
+
 	public void turnOn() {
-		System.out.println(model + "ÀÇ Àü¿øÀ» ÄÕ´Ï´Ù.");
+		System.out.println(model + "ì˜ ì „ì›ì„ ì¼­ë‹ˆë‹¤.");
 	}
-	
+
 	public void turnOff() {
-		System.out.println(model + "ÀÇ Àü¿øÀ» ²ü´Ï´Ù.");
+		System.out.println(model + "ì˜ ì „ì›ì„ ë•ë‹ˆë‹¤.");
 	}
-	
+
 	public abstract void pay();
-	
+
 	public void useSpecialFunction(SmartPhone phone) {
 		if(this instanceof IPhone) {
 			IPhone i = (IPhone)this;
@@ -53,6 +53,6 @@ public abstract class SmartPhone {
 	}
 
 	public String toString() {
-		return "¸ğµ¨¸í : " + model + ", È¸»ç¸í : " + company + ", °¡°İ : " + price + "¿ø";
+		return "ëª¨ë¸ëª… : " + model + ", íšŒì‚¬ëª… : " + company + ", ê°€ê²© : " + price + "ì›";
 	}
 }
