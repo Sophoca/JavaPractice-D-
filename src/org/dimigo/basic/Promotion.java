@@ -3,21 +3,21 @@ package org.dimigo.basic;
 public class Promotion {
 
 	public static void main(String[] args) {
-		
+
 		long average_salary = 1700000;
 		int staff = 3;
 		int total_store = 1500;
 		long year_salary = average_salary * 12 * staff * total_store;
-		
-		System.out.println("<< µğ¹Ìº£³× ¿¬°£ ÀÎ°Çºñ >>");		
-		System.out.println("¿ù Æò±Õ ±Ş¿© : " + String.format("%,d", average_salary) + "¿ø");
-		System.out.println("Á¡Æ÷ ³» Á÷¿ø ¼ö : " + staff + "¸í");
-		System.out.println("Á¡Æ÷ ¼ö : " + String.format("%,d", total_store) + "°³");
-		
+
+		System.out.println("<< ë””ë¯¸ë² ë„¤ ì—°ê°„ ì¸ê±´ë¹„ >>");
+		System.out.println("ì›” í‰ê·  ê¸‰ì—¬ : " + String.format("%,d", average_salary) + "ì›");
+		System.out.println("ì í¬ ë‚´ ì§ì› ìˆ˜ : " + staff + "ëª…");
+		System.out.println("ì í¬ ìˆ˜ : " + String.format("%,d", total_store) + "ê°œ");
+
 		System.out.println("");
 		System.out.println("");
-		
-		System.out.println("¿¬°£ ÀÎ°Çºñ : " + String.format("%,d", year_salary) +"¿ø");
+
+		System.out.println("ì—°ê°„ ì¸ê±´ë¹„ : " + String.format("%,d", year_salary) +"ì›");
 
 	}
 

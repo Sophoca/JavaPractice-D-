@@ -6,30 +6,30 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ PiggyBank
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 6. 15.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class PiggyBank {
 	private static int balance;
-	
-	public static void putMoney(FamilyMember member, int amount){
-		balance += amount;
-		System.out.println(member.getMemberName() + " " + amount + "¿ø ³ÖÀ½");
+
+	public static void putMoney(FamilyMember member, int amount) {
+		System.out.println(member.getMemberName() + " " + amount + "ì› ë„£ìŒ");
+		balance = balance + amount;
 	}
-	
-	public static void printBalance(){
-		System.out.println("µÅÁöÀú±İÅë ÃÑ ±İ¾× : " + balance + "¿ø");
+
+	public static void stealMoney(FamilyMember member, int amount) {
+		System.out.println(member.getMemberName() + " " + amount + "ì› ë¹¼ê°" );
+		balance = balance - amount;
 	}
-	
-	public static void stealMoney(FamilyMember member, int amount){
-		balance -= amount;
-		System.out.println(member.getMemberName() + " " + amount + "¿ø »©°¨");
+
+	public static void printBalance() {
+		System.out.println("ë¼ì§€ì €ê¸ˆí†µ ì´ ê¸ˆì•¡ : " + balance + "ì›");
 	}
 }

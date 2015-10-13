@@ -3,37 +3,37 @@ package org.dimigo.basic;
 public class Condition {
 
 	public static void main(String[] args) {
-		
+
 		int bus_pair = 850, light_car_pair = 300, else_car_pair = 600;
 		int distance = 10;
 		int money;
-		String car = "°í¼Ó¹ö½º";		// "°í¼Ó¹ö½º", "°æÂ÷", "±× ¿Ü";
-		
-		System.out.println("<< °í¼Óµµ·Î ÅëÇà·á °è»ê >>");
-		System.out.println("°Å¸® : " + distance + "km");
-		
+		String car = "ê³ ì†ë²„ìŠ¤";		// "ê³ ì†ë²„ìŠ¤", "ê²½ì°¨", "ê·¸ ì™¸";
+
+		System.out.println("<< ê³ ì†ë„ë¡œ í†µí–‰ë£Œ ê³„ì‚° >>");
+		System.out.println("ê±°ë¦¬ : " + distance + "km");
+
 		switch(car) {
-		case "°í¼Ó¹ö½º":
-			money = bus_pair + (distance - 1) / 10 * 300;
-			System.out.println("Â÷Á¾ : " + car);
-			System.out.println("ÅëÇà·á : " + money + "¿ø");
-			break;
-			
-		case "°æÂ÷":
-			money = light_car_pair + (distance - 1) / 10 * 200;
-			System.out.println("Â÷Á¾ : " + car);
-			System.out.println("ÅëÇà·á : " + money + "¿ø");
-			break;
-			
-		case "±× ¿Ü":
-			money = else_car_pair + (distance - 1) / 10 * 200;
-			System.out.println("Â÷Á¾ : " + car);
-			System.out.println("ÅëÇà·á : " + money + "¿ø");
-			break;
-			
-		default:
-			System.out.println("Àß¸øµÈ Â÷Á¾");
-			break;
+			case "ê³ ì†ë²„ìŠ¤":
+				money = bus_pair + (distance - 1) / 10 * 300;
+				System.out.println("ì°¨ì¢… : " + car);
+				System.out.println("í†µí–‰ë£Œ : " + money + "ì›");
+				break;
+
+			case "ê²½ì°¨":
+				money = light_car_pair + (distance - 1) / 10 * 200;
+				System.out.println("ì°¨ì¢… : " + car);
+				System.out.println("í†µí–‰ë£Œ : " + money + "ì›");
+				break;
+
+			case "ê·¸ ì™¸":
+				money = else_car_pair + (distance - 1) / 10 * 200;
+				System.out.println("ì°¨ì¢… : " + car);
+				System.out.println("í†µí–‰ë£Œ : " + money + "ì›");
+				break;
+
+			default:
+				System.out.println("ì˜ëª»ëœ ì°¨ì¢…");
+				break;
 		}
 	}
 }

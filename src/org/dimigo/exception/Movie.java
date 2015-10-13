@@ -6,14 +6,14 @@ package org.dimigo.exception;
 /**
  * <pre>
  * org.dimigo.exception
- * 	 |_ Movie
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 23.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_ Movietest
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 9. 23.
+ * </pre>
+ *
  * @version : 1.0
+ * @author    : 2636 í™ì„±ë¹ˆ
  */
 
 public class Movie {

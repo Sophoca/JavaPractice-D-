@@ -3,19 +3,6 @@
  */
 package org.dimigo.collection;
 
-/**
- * <pre>
- * org.dimigo.collection
- * 	 |_ Music
- * 
- * 1. 俺夸 : 
- * 2. 累己老 : 2015. 9. 24.
- * </pre> 
- * 
- * @author	: 2636 全己后
- * @version : 1.0
- */
-
 public class Music {
 
 	private String title;

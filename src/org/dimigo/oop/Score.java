@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.dimigo.oop;
 
 import java.util.*;
@@ -8,52 +5,47 @@ import java.util.*;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ Score
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 5. 14.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class Score {
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("±¹¾î Á¡¼ö ÀÔ·Â => ");
+
+		System.out.printf("êµ­ì–´ ì ìˆ˜ ì…ë ¥ => ");
 		int kor = scanner.nextInt();
-		System.out.println("¼öÇĞ Á¡¼ö ÀÔ·Â => ");
+		System.out.printf("ìˆ˜í•™ ì ìˆ˜ ì…ë ¥ => ");
 		int math = scanner.nextInt();
-		System.out.println("¿µ¾î Á¡¼ö ÀÔ·Â => ");
+		System.out.printf("ì˜ì–´ ì ìˆ˜ ì…ë ¥ => ");
 		int eng = scanner.nextInt();
-		
-		int tot = kor + math + eng;
-		double avg = tot/3;
-		
+
+		int sum = kor + math + eng;
+		double avg = (double)sum/3;
+
 		StringBuilder sb = new StringBuilder();
-		sb.append("\n\n<< Á¡¼öÃâ·Â >>\n")
-		  .append("±¹¾î Á¡¼ö : ")
-		  .append(kor)
-		  .append(" Á¡\n")
-		  .append("¼öÇĞ Á¡¼ö : ")
-		  .append(math)
-		  .append(" Á¡\n")
-		  .append("¿µ¾î Á¡¼ö : ")
-		  .append(eng)
-		  .append(" Á¡\n")
-		  .append("ÃÑÁ¡ : ")
-		  .append(tot)
-		  .append(" Á¡\n")
-		  .append("Æò±Õ : ")
-		  .append(avg)
-		  .append(" Á¡\n").toString();
-		
+
+		sb.append("<< ì ìˆ˜ ì¶œë ¥ >>\n")
+		.append("êµ­ì–´ì ìˆ˜ : " + kor + " ì \n")
+		.append("ìˆ˜í•™ì ìˆ˜ : " + math + " ì \n")
+		.append("ì˜ì–´ì ìˆ˜ : " + eng + " ì \n")
+		.append("ì´ì  : " + sum + " ì \n")
+		.append("í‰ê·  : " + String.format("%.1f", avg) + " ì \n");
+
+		System.out.println();
 		System.out.println(sb);
-		
+
 		scanner.close();
-		  
 	}
-	
+
 }

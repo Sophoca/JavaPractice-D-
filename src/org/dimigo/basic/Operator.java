@@ -3,25 +3,25 @@ package org.dimigo.basic;
 public class Operator {
 
 	public static void main(String[] args) {
-		
+
 		int a1 = 9, b1 = 10, a2 = 9;
 		double h1 = 5.8, h2 = 5.4;
 		double s1 = (a1 + b1) * h1 / 2;
 		double s2 = a2 * h2;
-		
-		System.out.println("<< µµÇü ³ĞÀÌ ºñ±³ >>");
-		System.out.println("»ç´Ù¸®²Ã ³ĞÀÌ : " + s1);
-		System.out.println("ÆòÇà»çº¯Çü ³ĞÀÌ : " + s2);
-		
+
+		System.out.println("<< ë„í˜• ë„“ì´ ë¹„êµ >>");
+		System.out.println("ì‚¬ë‹¤ë¦¬ê¼´ ë„“ì´ : " + s1);
+		System.out.println("í‰í–‰ì‚¬ë³€í˜• ë„“ì´ : " + s2);
+
 		System.out.println("");
 		System.out.println("");
-		
+
 		if(s1 > s2) {
-			System.out.println("»ç´Ù¸®²ÃÀÌ ÆòÇà»çº¯Çü º¸´Ù " + (s1 - s2) + " ´õ Å®´Ï´Ù.");
+			System.out.println("ì‚¬ë‹¤ë¦¬ê¼´ì´ í‰í–‰ì‚¬ë³€í˜• ë³´ë‹¤ " + (s1 - s2) + " ë” í½ë‹ˆë‹¤.");
 		} else if(s1 < s2) {
-			System.out.println("ÆòÇà»çº¯ÇüÀÌ »ç´Ù¸®²Ã º¸´Ù " + (s2 - s1) + " ´õ Å®´Ï´Ù.");
+			System.out.println("í‰í–‰ì‚¬ë³€í˜•ì´ ì‚¬ë‹¤ë¦¬ê¼´ ë³´ë‹¤ " + (s2 - s1) + " ë” í½ë‹ˆë‹¤.");
 		} else {
-			System.out.println("»ç´Ù¸®²Ã°ú ÆòÇà»çº¯ÇüÀÇ ³ĞÀÌ°¡ °°½À´Ï´Ù.");
+			System.out.println("ì‚¬ë‹¤ë¦¬ê¼´ê³¼ í‰í–‰ì‚¬ë³€í˜•ì˜ ë„“ì´ê°€ ê°™ìŠµë‹ˆë‹¤.");
 		}
 	}
 }

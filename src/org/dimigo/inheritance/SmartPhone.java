@@ -8,11 +8,11 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ SmartPhone
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 28.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 28.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
@@ -20,51 +20,39 @@ public class SmartPhone {
 	private String model;
 	private String company;
 	private int price;
-	
+
 	public SmartPhone() {
-		
+
 	}
-	
+
 	public SmartPhone(String model, String company, int price) {
 		this.model = model;
 		this.company = company;
 		this.price = price;
 	}
-	
+
 	public void turnOn() {
-		System.out.println(model + "ÀÇ Àü¿øÀ» ÄÕ´Ï´Ù.");
+		System.out.println(model + "ì˜ ì „ì›ì„ ì¼­ë‹ˆë‹¤.");
 	}
-	
+
 	public void turnOff() {
-		System.out.println(model + "ÀÇ Àü¿øÀ» ²ü´Ï´Ù.");
+		System.out.println(model + "ì˜ ì „ì›ì„ ë•ë‹ˆë‹¤.");
 	}
-	
+
 	public void pay() {
-		if(this instanceof Galaxy) {
-			Galaxy G = (Galaxy)this;
-			G.pay();
-		}
-		
-		else {
-			IPhone I = (IPhone)this;
-			I.pay();
-		}
+
 	}
-	
-	public void useSpecialFunction(SmartPhone phone) {
+
+	public void useSpecialFunction() {
 		if(this instanceof IPhone) {
-			IPhone i = (IPhone)this;
-			i.useAirDrop();
+			((IPhone) this).useAirDrop();
 		}
-		else if(this instanceof Galaxy) {
-			Galaxy g = (Galaxy)this;
-			g.useWirelessCharging();
+		else {
+			((Galaxy) this).useWirelessCharging();
 		}
 	}
 
 	public String toString() {
-		return "¸ğµ¨¸í : " + model + ", È¸»ç¸í : " + company + ", °¡°İ : " + price + "¿ø";
+		return "ëª¨ë¸ëª… : " + model +", ì œì¡°ì‚¬ : " + company + ", ê°€ê²© : " + String.format("%,d", price) + "ì›";
 	}
-	
-	
 }

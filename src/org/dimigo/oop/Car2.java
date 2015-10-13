@@ -6,14 +6,14 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ Car
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 4. 13.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
- * @version : 1.0  
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
+ * @version : 1.0
  */
 
 public class Car2 {

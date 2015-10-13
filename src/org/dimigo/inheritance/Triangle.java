@@ -8,36 +8,36 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ Triangle
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 20.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 20.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
 public class Triangle extends Figure {
 	private int width;
 	private int height;
-	
+
 	public Triangle(int width, int height) {
 		super(0, 0);
 		this.width = width;
 		this.height = height;
 	}
-	
+
 	public Triangle(int centerX, int centerY, int width, int height) {
 		super(centerX, centerY);
 		this.width = width;
 		this.height = height;
 	}
-	
-	protected double calcArea() {
-		return (width * height / 2);
-	}
-	
+
 	protected void printCenter() {
-		System.out.print("»ï°¢ÇüÀÇ ");
+		System.out.print("ì‚¼ê°í˜• ");
 		super.printCenter();
+	}
+
+	protected double calcArea() {
+		return (width * height) / 2;
 	}
 }

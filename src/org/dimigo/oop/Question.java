@@ -8,43 +8,57 @@ import java.util.*;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ Question
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 5. 14.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class Question {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		
-		String answerA = "ºò¹ğ";
-		String answerB = "Á¶ÀÎ¼º";
-		String answerC = "ÀÚ¹Ù";		
-		
-		System.out.println("°¡Àå ÁÁ¾ÆÇÏ´Â °¡¼ö´Â?");
+
+		System.out.println("ê°€ì¥ ì¢‹ì•„í•˜ëŠ” ì¶•êµ¬ì„ ìˆ˜ëŠ”?");
 		String answer1 = scanner.nextLine();
-		if(answerA.equals(answer1)) {
-			System.out.println("Á¤´äÀÔ´Ï´Ù!! ^^");
-		} else System.out.println("Æ²·È½À´Ï´Ù!! ¤Ğ");
-		
-		System.out.println("°¡Àå ÁÁ¾ÆÇÏ´Â ¹è¿ì´Â?");
+		if(answer1.equals("ì¼€ë¹ˆ ë¯¸ë„ë¼ìŠ¤")) {
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤!! ^^");
+			System.out.println();
+		}
+		else {
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤!! ã… ");
+			System.out.println();
+		}
+
+		System.out.println("ê°€ì¥ ì¢‹ì•„í•˜ëŠ” ë°°ìš°ëŠ”?");
 		String answer2 = scanner.nextLine();
-		if(answerB.equals(answer2)) {
-			System.out.println("Á¤´äÀÔ´Ï´Ù!! ^^");
-		} else System.out.println("Æ²·È½À´Ï´Ù!! ¤Ğ");
-		
-		System.out.println("°¡Àå ÁÁ¾ÆÇÏ´Â °ú¸ñÀº?");
+		if(answer2.equals("í´ë¡œì´ ëª¨ë ˆì¸ ")) {
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤!! ^^");
+			System.out.println();
+		}
+		else {
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤!! ã… ");
+			System.out.println();
+		}
+
+		System.out.println("ê°€ì¥ ì¢‹ì•„í•˜ëŠ” ê³¼ëª©ëŠ”?");
 		String answer3 = scanner.nextLine();
-		if(answerC.equals(answer3)) {
-			System.out.println("Á¤´äÀÔ´Ï´Ù!! ^^");
-		} else System.out.println("Æ²·È½À´Ï´Ù!! ¤Ğ");
-		
+		if(answer3.equals("ìë°”")) {
+			System.out.println("ì •ë‹µì…ë‹ˆë‹¤!! ^^");
+			System.out.println();
+		}
+		else {
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤!! ã… ");
+			System.out.println();
+		}
+
 		scanner.close();
 	}
 

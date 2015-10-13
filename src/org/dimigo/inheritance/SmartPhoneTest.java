@@ -8,34 +8,34 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ SmartPhoneTest
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 28.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 28.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
 public class SmartPhoneTest {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SmartPhone[] phones = {
-				new IPhone("iPhone 6", "¾ÖÇÃ", 700000),
-				new Galaxy("°¶·°½Ã S6", "°¶·°½Ã", 650000)
+				new IPhone("iPhone 6", "ì• í”Œ", 700000),
+				new Galaxy("ê°¤ëŸ­ì‹œ S6", "ì‚¼ì„±", 650000)
 		};
-		
+
 		for(SmartPhone phone : phones) {
 			System.out.println(phone);
 			phone.turnOn();
 			phone.pay();
-			
-			// Iphone or Galaxy ±â´É »ç¿ë
-			phone.useSpecialFunction(phone);
-			
+
+			phone.useSpecialFunction();
+
 			phone.turnOff();
 			System.out.println();
-		}		
-
+		}
 	}
-
 }

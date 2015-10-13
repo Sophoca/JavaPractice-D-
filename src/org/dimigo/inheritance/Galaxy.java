@@ -8,28 +8,28 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ Galaxy
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 28.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 28.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
 public class Galaxy extends SmartPhone {
 	public Galaxy() {
-		
+
 	}
-	
+
 	public Galaxy(String model, String company, int price) {
 		super(model, company, price);
 	}
-	
+
 	public void pay() {
-		System.out.println("»ï¼ºÆäÀÌ·Î °áÁ¦ÇÕ´Ï´Ù");
+		System.out.println("ì‚¼ì„± í˜ì´ë¡œ ê²°ì œí•©ë‹ˆë‹¤.");
 	}
-	
+
 	public void useWirelessCharging() {
-		System.out.println("¹«¼± ÃæÀü±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù");
+		System.out.println("ë¬´ì„  ì¶©ì „ ê¸°ëŠ¥ì„ ì´ìš©í•©ë‹ˆë‹¤.");
 	}
 }

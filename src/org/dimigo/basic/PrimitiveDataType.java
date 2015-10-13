@@ -3,30 +3,30 @@ package org.dimigo.basic;
 public class PrimitiveDataType {
 
 	public static void main(String[] args) {
-		
-		String name = "¾ÆÀÌÀ¯";
-		
+
+		String name = "ì•„ì´ìœ ";
+
 		boolean male = false;
-		
-		
+
+
 		int age = 23;
 		double height = 161.8;
 		float weight = 44.3f;
 		char blood_type = 'A';
-		
-		System.out.println("<< ¾ÆÀÌÀ¯ ÇÁ·ÎÇÊ >>");
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.print("¼ºº° : ");
+
+		System.out.println("<< ì•„ì´ìœ  í”„ë¡œí•„ >>");
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.print("ì„±ë³„ : ");
 		if(!male){
-			System.out.println("¿©ÀÚ");
+			System.out.println("ì—¬ì");
 		} else{
-			System.out.println("³²ÀÚ");
+			System.out.println("ë‚¨ì");
 		}
-		
-		System.out.println("³ªÀÌ : " + age);
-		System.out.println("Å° : " + height);
-		System.out.println("¸ö¹«°Ô : "+ weight);
-		System.out.println("Ç÷¾×Çü : "+ blood_type + "Çü");
+
+		System.out.println("ë‚˜ì´ : " + age);
+		System.out.println("í‚¤ : " + height);
+		System.out.println("ëª¸ë¬´ê²Œ : "+ weight);
+		System.out.println("í˜ˆì•¡í˜• : "+ blood_type + "í˜•");
 	}
 
 }

@@ -6,31 +6,30 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ FamilyMember
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 6. 15.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class FamilyMember {
 	private static int memberCnt;
 	private String memberName;
-	
-	public FamilyMember(String memberName){
+
+	public FamilyMember(String memberName) {
 		this.memberName = memberName;
 		memberCnt++;
 	}
-	
-	public String getMemberName(){
-		return this.memberName;
-	}
-	
-	public static void printMemberCnt(){
-		System.out.println("°¡Á· ÃÑ ÀÎ¿ø ¼ö : " + memberCnt + "¸í");
+
+	public String getMemberName() {
+		return memberName;
 	}
 
+	public static void printMemberCnt() {
+		System.out.println("ê°€ì¡± ì´ ì¸ì› ìˆ˜ : " + memberCnt + "ëª…");
+	}
 }

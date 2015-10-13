@@ -6,34 +6,36 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ PiggyBankTest
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 6. 15.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class PiggyBankTest {
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		FamilyMember father = new FamilyMember("¾Æºü");
-		FamilyMember mother = new FamilyMember("¾ö¸¶");
-		FamilyMember me = new FamilyMember("³ª");
-		FamilyMember brother = new FamilyMember("³²µ¿»ı");
-		
+		FamilyMember member1 = new FamilyMember("ì•„ë¹ ");
+		FamilyMember member2 = new FamilyMember("ì—„ë§ˆ");
+		FamilyMember member3 = new FamilyMember("ë‚˜");
+		FamilyMember member4 = new FamilyMember("ë‚¨ë™ìƒ");
+
 		FamilyMember.printMemberCnt();
-		PiggyBank.putMoney(father, 10000);
-		PiggyBank.putMoney(mother, 5000);
-		PiggyBank.putMoney(me, 2000);
-		PiggyBank.putMoney(brother, 1000);
+		PiggyBank.putMoney(member1, 10000);
+		PiggyBank.putMoney(member2, 5000);
+		PiggyBank.putMoney(member3, 2000);
+		PiggyBank.putMoney(member4, 1000);
 		PiggyBank.printBalance();
-		PiggyBank.putMoney(me, 1000);
+		PiggyBank.putMoney(member3, 1000);
+		PiggyBank.stealMoney(member4, 2000);
 		PiggyBank.printBalance();
-		PiggyBank.stealMoney(brother, 2000);
-		PiggyBank.printBalance();
-		
 	}
 
 }

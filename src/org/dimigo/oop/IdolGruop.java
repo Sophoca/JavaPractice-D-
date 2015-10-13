@@ -6,34 +6,33 @@ package org.dimigo.oop;
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ IdolGruop
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 5. 28.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * 	 |_
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class IdolGruop {
 
 	public static void main(String[] args) {
-		String[] idolGroup = {"ºò¹ğ", "2NE1", "°É½ºµ¥ÀÌ"};
+		String[] idolGroup = {"ë¹…ë±…", "2NE1", "ê±¸ìŠ¤ë°ì´"};
 		String[][] members = {
-				{"GD", "ÅÂ¾ç", "´ë¼º", "Å¾", "½Â¸®"},
-				{"CL", "»ê´Ù¶ó¹Ú", "¹Úº½", "¹ÎÁö"},
-				{"À¯¶ó", "Çı¸®", "¼ÒÁø", "¹Î¾Æ"}
+				{"GD", "íƒœì–‘", "ëŒ€ì„±", "íƒ‘", "ìŠ¹ë¦¬"},
+				{"CL", "ì‚°ë‹¤ë¼ë°•", "ë°•ë´„", "ë¯¼ì§€"},
+				{"ìœ ë¼", "í˜œë¦¬", "ì†Œì§„", "ë¯¼ì•„"}
 		};
-		
-		for(int i = 0; i < members.length; i++) {
-			System.out.println("<< " + idolGroup[i] + " ¸â¹ö>>");
-			for(int j = 0; j < members[i].length; j++) {
+
+		for(int i=0; i<idolGroup.length; i++) {
+			System.out.println("<< " + idolGroup[i] + " ë©¤ë²„ >>");
+			for(int j=0; j<members[i].length; j++) {
 				System.out.println(members[i][j]);
 			}
 			System.out.println();
 		}
-		System.out.println();
 	}
 
 }

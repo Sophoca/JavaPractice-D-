@@ -8,43 +8,44 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ FigureTest
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 20.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 20.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
 public class FigureTest {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Circle c = new Circle(5);
 		Triangle t = new Triangle(10, 10, 5, 8);
 		Rectangle r = new Rectangle(20, 20, 5, 8);
-		
-		System.out.println("¿øÀÇ ³ĞÀÌ : " + String.format("%.1f", c.calcArea()));
-		System.out.println("»ï°¢ÇüÀÇ ³ĞÀÌ : " + t.calcArea());
-		System.out.println("»ç°¢ÇüÀÇ ³ĞÀÌ : " + r.calcArea());
-		
+
+		System.out.println("ì›ì˜ ë„“ì´ : " + String.format("%.1f", c.calcArea()));
+		System.out.println("ì‚¼ê°í˜• ë„“ì´ : " + String.format("%.1f", t.calcArea()));
+		System.out.println("ì‚¬ê°í˜• ë„“ì´ : " + String.format("%.1f", r.calcArea()));
 		System.out.println();
-		
+
 		c.printCenter();
 		t.printCenter();
 		r.printCenter();
-		
+
 		System.out.println();
-		System.out.println("Áß½ÉÁÂÇ¥ ÀÌµ¿(x, yÃà 5¾¿)");
+		System.out.println("--ì¤‘ì‹¬ì¢Œí‘œ ì´ë™(x, yì¶• 5ì”©)");
 		System.out.println();
-		
+
 		c.moveFigure(5, 5);
 		t.moveFigure(5, 5);
 		r.moveFigure(5, 5);
-		
+
 		c.printCenter();
 		t.printCenter();
 		r.printCenter();
-		
 	}
 
 }

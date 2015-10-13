@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package org.dimigo.collection;
 
@@ -9,48 +9,48 @@ import java.util.*;
  * <pre>
  * org.dimigo.collection
  * 	 |_ MelonGenreChart
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 10. 1.
+ *
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 10. 1.
  * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class MelonGenreChart {
-	
+
 	public static void main(String[] args) {
 		Map<String, List<Music>> map = new HashMap<String, List<Music>>();
 		List<Music> ballad = new ArrayList<Music>();
-		ballad.add(new Music("³» Ã¹»ç¶û", "º£¸®±Â"));
-		ballad.add(new Music("¶Ç ´Ù½Ã »ç¶û", "ÀÓÃ¢Á¤"));
-		ballad.add(new Music("ºÎ»ê¿¡ °¡¸é", "¹ÚÁø¿µ"));
-		
-		map.put("¹ß¶óµå", ballad);
-		
+		ballad.add(new Music("ë‚´ ì²«ì‚¬ë‘", "ë² ë¦¬êµ¿"));
+		ballad.add(new Music("ë˜ ë‹¤ì‹œ ì‚¬ë‘", "ì„ì°½ì •"));
+		ballad.add(new Music("ë¶€ì‚°ì— ê°€ë©´", "ë°•ì§„ì˜"));
+
+		map.put("ë°œë¼ë“œ", ballad);
+
 		List<Music> dance = new ArrayList<Music>();
-		dance.add(new Music("Ä¿ÇÇ", "À¯ÀçÈ¯, ±è¿¹¸²"));
-		dance.add(new Music("´Ù ÀßµÉ°Å¾ß", "Äğ"));
-		
-		map.put("´í½º", dance);
-		
-		System.out.println("-----<< ¸á·Ğ Àå¸£º° Â÷Æ® >>-----");
+		dance.add(new Music("ì»¤í”¼", "ìœ ì¬í™˜, ê¹€ì˜ˆë¦¼"));
+		dance.add(new Music("ë‹¤ ì˜ë ê±°ì•¼", "ì¿¨"));
+
+		map.put("ëŒ„ìŠ¤", dance);
+
+		System.out.println("-----<< ë©œë¡  ì¥ë¥´ë³„ ì°¨íŠ¸ >>-----");
 		printMap(map);
-		
-		System.out.println("-----<< ¹ß¶óµå 3À§°î º¯°æ >>-----");
-		ballad.set(2, new Music("Áö¿ì°í Áö¿öµµ", "Â÷¼ö°æ"));
+
+		System.out.println("-----<< ë°œë¼ë“œ 3ìœ„ê³¡ ë³€ê²½ >>-----");
+		ballad.set(2, new Music("ì§€ìš°ê³  ì§€ì›Œë„", "ì°¨ìˆ˜ê²½"));
 		printMap(map);
-		
-		System.out.println("-----<< ¹ß¶óµå 1À§°î »èÁ¦ >>-----");
+
+		System.out.println("-----<< ë°œë¼ë“œ 1ìœ„ê³¡ ì‚­ì œ >>-----");
 		ballad.remove(0);
 		printMap(map);
-		
-		System.out.println("-----<< ÀüÃ¼ ¸®½ºÆ® »èÁ¦ >>-----");
+
+		System.out.println("-----<< ì „ì²´ ë¦¬ìŠ¤íŠ¸ ì‚­ì œ >>-----");
 		map.clear();
 		printMap(map);
 	}
-	
+
 	public static void printMap(Map<String, List<Music>> map) {
 		int i = 1;
 		for(String key : map.keySet()) {

@@ -5,36 +5,36 @@ package org.dimigo.inheritance;
 
 /**
  * <pre>
- * org.dimigo.inheritance
- * 	 |_ Circle
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 20.
- * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ * org.dimigo.oop
+ * 	 |_ Figure
+ *
+ * 1. ê°œìš” :
+ * 2. ì‘ì„±ì¼ : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class Circle extends Figure {
 	private int radius;
-		
+
 	public Circle(int radius) {
 		super(0, 0);
 		this.radius = radius;
 	}
-		
+
 	public Circle(int centerX, int centerY, int radius) {
 		super(centerX, centerY);
 		this.radius = radius;
 	}
-	
-	protected double calcArea() {
-		return (Math.PI * radius * radius);
-	}
-	
+
 	protected void printCenter() {
-		System.out.print("¿øÀÇ ");
+		System.out.print("ì› ");
 		super.printCenter();
+	}
+
+	protected double calcArea() {
+		return Math.PI * radius * radius;
 	}
 }

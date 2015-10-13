@@ -1,77 +1,77 @@
-/**
- * 
- */
 package org.dimigo.oop;
 
 /**
  * <pre>
  * org.dimigo.oop
- * 	 |_ Snack
- * 
- * 1. ∞≥ø‰ : 
- * 2. ¿€º∫¿œ : 2015. 5. 18.
- * </pre> 
- * 
- * @author	: 2636 »´º∫∫Û
+ * 	 |_ SnackTest
+ *
+ * 1. Í∞úÏöî :
+ * 2. ÏûëÏÑ±Ïùº : 2015. 5. 18.
+ * </pre>
+ *
+ * @author	: 2636 ÌôçÏÑ±Îπà
  * @version : 1.0
  */
 
 public class Snack {
-		String name;
-		String company;
-		int price;
-		int product;
-		
-		Snack() {}
-		
-		Snack(String name, String company, int price, int product) {
-			this.name = name;
-			this.company = company;
-			this.price = price;
-			this.product = product;
-		}
 
-		public String getName() {
-			return name;
-		}
+	private String name;
+	private String company;
+	private int price;
+	private int number;
 
-		public void setName(String name) {
-			this.name = name;
-		}
+	public Snack() {
 
-		public String getCompany() {
-			return company;
-		}
-		
-		void setCompany(String company) {
-			this.company = company;
-		}
- 
-		int getPrice() {
-			return price;
-		}
+	}
 
-		public void setPrice(int price) {
-			this.price = price;
-		}
+	public Snack(String name, String company, int price, int number) {
+		this.name = name;
+		this.company = company;
+		this.price = price;
+		this.number = number;
+	}
 
-		public int getProduct() {
-			return product;
-		}
+	public String getName() {
+		return name;
+	}
 
-		public void setProduct(int product) {
-			this.product = product;
-		}
-		
-		public void printSnack() {
-			System.out.println("¿Ã∏ß : " + name);
-			System.out.println("¡¶¡∂ªÁ : " + company);
-			System.out.println("∞°∞› : " + String.format("%,d", price));
-			System.out.println("∞≥ºˆ : " + product + "∞≥");
-		}
-		
-		public int calcPrice() {
-			return product * price;
-		}
-	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public void printSnack() {
+		System.out.println("Ïù¥Î¶Ñ : " + name);
+		System.out.println("Ï†úÏ°∞ÏÇ¨ : " + company);
+		System.out.println("Í∞ÄÍ≤© : " + String.format("%,d", price) + "Ïõê");
+		System.out.println("Í∞úÏàò : " + number + "Í∞ú");
+		System.out.println();
+	}
+
+	public int calcPrice() {
+		return price * number;
+	}
 }

@@ -8,31 +8,31 @@ package org.dimigo.inheritance;
  * org.dimigo.inheritance
  * 	 |_ Figure
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 8. 20.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2015. 8. 20.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 È«ï¿½ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 
 public class Figure {
 	private int centerX;
 	private int centerY;
-	
+
 	public Figure(int centerX, int centerY) {
 		this.centerX = centerX;
 		this.centerY = centerY;
 	}
-	
+
 	protected double calcArea() {
 		return 0.0;
 	}
-	
+
 	protected void printCenter() {
-		System.out.println("Áß½ÉÁÂÇ¥ : (" + centerX + ", " + centerY + ")");
+		System.out.println("ì¤‘ì‹¬ì¢Œí‘œ : (" + centerX + ", " + centerY + ")");
 	}
-	
+
 	protected void moveFigure(int x, int y) {
 		centerX += x;
 		centerY += y;

@@ -10,11 +10,11 @@ import java.util.*;
  * org.dimigo.collection
  * 	 |_ MelonChart
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 24.
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 9. 24.
  * </pre> 
  * 
- * @author	: 2636 È«¼ººó
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
@@ -23,26 +23,26 @@ public class MelonChart {
 	public static void main(String[] args) {
 		List<Music> list = new ArrayList<Music>();
 		
-		list.add(new Music("¹Ù¶÷ÀÌ³ª Á» ½û", "°³¸®"));
-		list.add(new Music("º¸Åë¿¬¾Ö", "¹Ú°æ"));
-		list.add(new Music("ÃëÇâÀú°İ", "iKon"));
+		list.add(new Music("ë°”ëŒì´ë‚˜ ì¢€ ì", "ê°œë¦¬"));
+		list.add(new Music("ë³´í†µì—°ì• ", "ë°•ê²½"));
+		list.add(new Music("ì·¨í–¥ì €ê²©", "iKon"));
 		
-		System.out.println("--<< ¸á·ĞÂ÷Æ® >>--");
+		System.out.println("--<< ë©œë¡ ì°¨íŠ¸ >>--");
 		printList(list);
 		
-		System.out.println("\n--<< 2À§ °î Ãß°¡ >>--");
-		list.add(1, new Music("·¹¿Ë", "ÀÌÀ¯°«Áö"));
+		System.out.println("\n--<< 2ìœ„ ê³¡ ì¶”ê°€ >>--");
+		list.add(1, new Music("ë ˆì˜¹", "ì´ìœ ê°“ì§€"));
 		printList(list);
 		
-		System.out.println("\n--<< 3À§ °î º¯°æ >>--");
-		list.set(2, new Music("¸¿¼Ò»ç", "È²ÅÂÁö"));
+		System.out.println("\n--<< 3ìœ„ ê³¡ ë³€ê²½ >>--");
+		list.set(2, new Music("ë§™ì†Œì‚¬", "í™©íƒœì§€"));
 		printList(list);
 		
-		System.out.println("\n--<< 4À§ °î »èÁ¦ >>--");
+		System.out.println("\n--<< 4ìœ„ ê³¡ ì‚­ì œ >>--");
 		list.remove(3);
 		printList(list);
 		
-		System.out.println("\n--<< ÀüÃ¼ »èÁ¦ >>--");
+		System.out.println("\n--<< ì „ì²´ ì‚­ì œ >>--");
 		list.clear();
 		printList(list);
 	}

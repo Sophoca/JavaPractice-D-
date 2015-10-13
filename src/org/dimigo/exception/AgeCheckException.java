@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package org.dimigo.exception;
 
@@ -7,22 +7,22 @@ package org.dimigo.exception;
  * <pre>
  * org.dimigo.exception
  * 	 |_ AgeCheckException
- * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2015. 9. 23.
+ *
+ * 1. ê°œìš” : 
+ * 2. ì‘ì„±ì¼ : 2015. 9. 23.
  * </pre> 
- * 
- * @author	: 2636 È«¼ººó
+ *
+ * @author	: 2636 í™ì„±ë¹ˆ
  * @version : 1.0
  */
 
 public class AgeCheckException extends Exception {
-	
+
 	public AgeCheckException() {
-		
+
 	}
-	
+
 	public AgeCheckException(Movie movie) {
-		super(movie.getTitle() + "Àº/´Â" + movie.getLimitAge() + "¼¼ ÀÌ»ó °ü¶÷°¡ÀÔ´Ï´Ù.");
+		super(movie.getTitle() + "ì€/ëŠ”" + movie.getLimitAge() + "ì„¸ ì´ìƒ ê´€ëŒê°€ì…ë‹ˆë‹¤.");
 	}
 }
