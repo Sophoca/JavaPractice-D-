@@ -12,7 +12,7 @@ package org.dimigo.abstractclass;
  * 2. 작성일 : 2015. 9. 3.
  * </pre> 
  *
- * @author	: 2636 홍성빈 111
+ * @author	: 2636 홍성빈
  * @version : 1.0
  */
 
