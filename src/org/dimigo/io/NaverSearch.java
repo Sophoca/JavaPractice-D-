@@ -77,11 +77,10 @@ public class NaverSearch {
 	        
 	        String responseBody = httpclient.execute(httpget, responseHandler);
 	        System.out.println("----------------------------------------");
-	        // System.out.println(responseBody);
+			System.out.println(responseBody);
 	        
 	        List<Movie> movieList = NaverMovieXMLParser.parse(responseBody);		// 파싱
-	        
-	        // System.out.println(movieList);
+			System.out.println(movieList);
 	        
 	        /********************************************************
 	         * 검색된 순서대로 출력하기
@@ -100,12 +99,12 @@ public class NaverSearch {
 
 			System.out.println(str);
 
+			// files/movies.txt 파일에 write하기
+
 			File file = new File("C:\\Users\\성빈\\git\\JavaPractice\\file\\movies.txt");
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 			writer.write(str);
 			writer.close();
-
-			// files/movies.txt 파일에 write하기
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
