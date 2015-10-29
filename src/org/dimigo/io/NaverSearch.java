@@ -96,8 +96,6 @@ public class NaverSearch {
 			for(Movie movie : movieList) {
 				counting++;
 				str += counting + ". " + movie.getTitle() + " - " + movie.getActors() + "\n";
-				if(counting == 3)
-					break;
 			}
 
 			System.out.println(str);
