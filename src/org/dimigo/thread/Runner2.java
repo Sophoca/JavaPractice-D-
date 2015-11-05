@@ -11,6 +11,7 @@ package org.dimigo.thread;
  * @author : 2636 홍성빈
  * @version : 1.0
  */
+
 public class Runner2 implements Runnable{
     private String name;
 

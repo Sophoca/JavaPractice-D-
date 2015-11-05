@@ -11,6 +11,7 @@ package org.dimigo.thread;
  * @author : 2636 홍성빈
  * @version : 1.0
  */
+
 public class Race {
     public static void main(String[] args) {
         System.out.println("main thread start");
