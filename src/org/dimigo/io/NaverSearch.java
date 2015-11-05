@@ -40,9 +40,9 @@ public class NaverSearch {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		
 	    try {
-	    	String keyword = null;
-	    	
-	    	/********************************************************
+	    	String keyword;
+
+			/********************************************************
 	         * 표준입력으로 검색할 키워드를 입력받기
 	         * > 키워드를 입력하세요 => 스타워즈
 	         ********************************************************/
@@ -50,30 +50,21 @@ public class NaverSearch {
 
 			Scanner scanner = new Scanner(System.in);
 			keyword = scanner.nextLine();
+            scanner.close();
 
-			StringBuffer sb = new StringBuffer(NAVER_OPEN_URL);
-	    	sb.append("?key=").append(SEARCH_KEY).append("&query=").append(keyword)
-	    	  .append("&display=10&start=1&target=movie");
-
-	    	HttpGet httpget = new HttpGet(sb.toString());
+            HttpGet httpget = new HttpGet(NAVER_OPEN_URL + "?key=" + SEARCH_KEY + "&query=" + keyword + "&display=10&start=1&target=movie");
 	        System.out.println("Executing request " + httpget.getRequestLine());
 
 	        // Create a custom response handler
-	        ResponseHandler<String> responseHandler = new ResponseHandler<String>() {
-
-	            @Override
-	            public String handleResponse(
-	                    final HttpResponse response) throws ClientProtocolException, IOException {
-	                int status = response.getStatusLine().getStatusCode();
-	                if (status >= 200 && status < 300) {
-	                    HttpEntity entity = response.getEntity();
-	                    return entity != null ? EntityUtils.toString(entity) : null;
-	                } else {
-	                    throw new ClientProtocolException("Unexpected response status: " + status);
-	                }
-	            }
-
-	        };
+	        ResponseHandler<String> responseHandler = response -> {
+                int status = response.getStatusLine().getStatusCode();
+                if (status >= 200 && status < 300) {
+                    HttpEntity entity = response.getEntity();
+                    return entity != null ? EntityUtils.toString(entity) : null;
+                } else {
+                    throw new ClientProtocolException("Unexpected response status: " + status);
+                }
+            };
 	        
 	        String responseBody = httpclient.execute(httpget, responseHandler);
 	        System.out.println("----------------------------------------");
@@ -105,7 +96,6 @@ public class NaverSearch {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 			writer.write(str);
 			writer.close();
-
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
